@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nency's personal developer portfolio.">
+  <title>Nency | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Nency home">nency<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false"
+        aria-controls="nav-links" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> COMPUTER ENGINEERING STUDENT</p>
+        <h1 id="hero-title">Hi, I'm <span class="gradient-text">Nency.</span><br>Learning to build for the web.</h1>
+        <p class="hero-description">
+          I'm exploring web development and building my skills one project at a time.
+          This portfolio is my space to share what I'm learning and creating.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary" href="#contact">Get in touch</a>
+        </div>
+        <p class="small-note">Curious mind <span aria-hidden="true">·</span> Work in progress <span aria-hidden="true">·</span> Always learning</p>
+      </div>
+      <div class="hero-art" aria-label="Decorative code illustration" role="img">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="code-card">
+          <div class="code-card-top"><span></span><span></span><span></span><p>nency.js</p></div>
+          <div class="code-lines" aria-hidden="true">
+            <p><span class="line-number">01</span><span class="code-purple">const</span> <span class="code-blue">developer</span> = {</p>
+            <p><span class="line-number">02</span>&nbsp;&nbsp;name: <span class="code-green">'Nency'</span>,</p>
+            <p><span class="line-number">03</span>&nbsp;&nbsp;learning: <span class="code-green">'Web Dev'</span>,</p>
+            <p><span class="line-number">04</span>&nbsp;&nbsp;curious: <span class="code-orange">true</span>,</p>
+            <p><span class="line-number">05</span>};</p>
+            <p class="code-spacer"><span class="line-number">06</span></p>
+            <p><span class="line-number">07</span><span class="code-purple">while</span> (learning) {</p>
+            <p><span class="line-number">08</span>&nbsp;&nbsp;keepBuilding();</p>
+            <p><span class="line-number">09</span>}</p>
+          </div>
+          <div class="code-card-footer"><span class="status-dot"></span> Learning mode: ON</div>
+        </div>
+        <div class="floating-badge badge-html"> &lt;/&gt; <span>HTML</span></div>
+        <div class="floating-badge badge-css">✳ <span>CSS</span></div>
+        <div class="hero-glow"></div>
+      </div>
+    </section>
+
+    <section class="about section container" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2 id="about-title">Building my foundation, <span class="gradient-text">one line at a time.</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-mark" aria-hidden="true"><span>N</span><i>✦</i></div>
+        <div class="about-copy">
+          <p>I'm Nency, a computer engineering student exploring how ideas become useful digital experiences. I'm currently developing my web development fundamentals and learning by making small projects.</p>
+          <p>My goal is to keep practising, understand the code I write, and gradually create websites that are clear, responsive, and enjoyable to use.</p>
+          <div class="fact-row">
+            <div><span class="fact-label">CURRENT FOCUS</span><strong>Web development</strong></div>
+            <div><span class="fact-label">MY APPROACH</span><strong>Learn by building</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">WHAT I'M LEARNING</p>
+          <h2 id="skills-title">My learning toolkit<span class="gradient-text">.</span></h2>
+          <p class="section-intro">These are the core web technologies I'm focusing on. I'll update this section as I gain more experience.</p>
+        </div>
+        <ul class="skill-grid">
+          <li class="skill-card"><span class="skill-icon html-icon">&lt;/&gt;</span><h3>HTML5</h3><p>Structuring web content with semantic elements.</p><span class="skill-tag">Learning</span></li>
+          <li class="skill-card"><span class="skill-icon css-icon">✳</span><h3>CSS3</h3><p>Styling layouts with Flexbox, Grid, and responsive rules.</p><span class="skill-tag">Learning</span></li>
+          <li class="skill-card"><span class="skill-icon js-icon">JS</span><h3>JavaScript</h3><p>Exploring the basics of interactive web pages.</p><span class="skill-tag">Exploring</span></li>
+          <li class="skill-card"><span class="skill-icon git-icon">⌘</span><h3>Git & GitHub</h3><p>Next up: practising version control and publishing projects.</p><span class="skill-tag">Next to learn</span></li>
+        </ul>
+        <p class="honesty-note"><span aria-hidden="true">✦</span> Skill labels reflect my learning journey—not professional proficiency.</p>
+      </div>
+    </section>
+
+    <section class="projects section container" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <p class="eyebrow">MAKING IDEAS REAL</p>
+        <h2 id="projects-title">Projects & practice<span class="gradient-text">.</span></h2>
+        <p class="section-intro">I'm building my project collection. This portfolio is my first showcase; I'll add more projects here as I complete them.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card featured-project">
+          <div class="project-visual portfolio-visual" aria-hidden="true"><div class="mini-window"><div class="mini-window-bar"></div><div class="mini-layout"><div></div><div><i></i><i></i><i></i></div></div></div><span class="visual-label">01 / PORTFOLIO</span></div>
+          <div class="project-content"><div class="project-meta"><span>PERSONAL WEBSITE</span><span class="project-status">Current project</span></div><h3>Personal Portfolio</h3><p>A responsive portfolio page built to practise semantic HTML, CSS layouts, and mobile-friendly design.</p><ul class="tag-list"><li>HTML5</li><li>CSS3</li><li>Responsive</li></ul><span class="project-note">You're viewing this project now.</span></div>
+        </article>
+        <article class="project-card coming-soon">
+          <div class="coming-icon" aria-hidden="true">✳</div>
+          <div class="project-content"><div class="project-meta"><span>UP NEXT</span><span class="project-status status-planned">Planned</span></div><h3>More projects soon</h3><p>I'm planning to practise interactive websites and add my completed work here.</p><ul class="tag-list"><li>Practice</li><li>Learning</li></ul><span class="project-note">Project details will be added when complete.</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section container" id="contact" aria-labelledby="contact-title">
+      <div class="contact-panel">
+        <div>
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2 id="contact-title">Have a project or idea?<br><span class="gradient-text">Let's learn together.</span></h2>
+          <p class="contact-description">I'm interested in connecting with fellow learners and exploring new ideas. Add your GitHub profile link below when you're ready.</p>
+        </div>
+        <div class="contact-actions">
+          <!-- Replace the placeholder URL with your real GitHub profile before publishing. -->
+          <a class="button button-primary" href="https://github.com/REPLACE-WITH-YOUR-USERNAME" target="_blank" rel="noopener noreferrer" id="github-link">Find me on GitHub <span aria-hidden="true">↗</span></a>
+          <p class="placeholder-warning" id="github-warning">Remember to replace the GitHub placeholder link before publishing.</p>
+        </div>
+        <div class="contact-decoration" aria-hidden="true">N<span>.</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home">nency<span>.</span></a>
+      <p>Designed and built while learning. <span aria-hidden="true">♥</span></p>
+      <a href="#home" class="back-to-top">Back to top ↑</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> Nency. Made with curiosity.</p>
+  </footer>
+</body>
+</html>
